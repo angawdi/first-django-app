@@ -26,5 +26,12 @@
 	{% for p in bobs_pets %}
 		<p>{{ p }}</p>
 	{% endfor %}
+
+	<h2>Bob's Library</h2>
+	<ul>
+		{% for book in bobs_books %}
+		<li>{{ book.title}}</li>
+		{% endfor %}
+	</ul>
 </body>
 </html>
