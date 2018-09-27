@@ -10,4 +10,9 @@ def bob(request):
 	print('Bob says hi')
 	return render(request,
 		'test_app/bob.html', 
-		{ 'bobs_fave_food': 'Beans' })
+		{ 
+
+			'bobs_fave_food': 'Beans', 
+			'bob_is_tired': True,
+			'bobs_pets': ['dog', 'dog', 'cat', 'bird']
+		})

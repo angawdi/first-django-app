@@ -13,5 +13,15 @@
 	</ul>
 
 	<h2>Bob is eating: {{ bobs_fave_food}}</h2>
+	{% if bob_is_tire %}
+		<h3>Bob is going to bed</h3>
+	{% else %}
+		<h3>Bob is wide awake!</h3>
+	{% endif %}
+
+	<h2>Bob's Pets</h2>
+	{% for p in bobs_pets %}
+		<p>{{ p }}</p>
+	{% endfor %}
 </body>
 </html>
