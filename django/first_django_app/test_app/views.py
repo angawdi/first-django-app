@@ -8,4 +8,6 @@ def index(request):
 
 def bob(request):
 	print('Bob says hi')
-	return render(request,'test_app/bob.html')
+	return render(request,
+		'test_app/bob.html', 
+		{ 'bobs_fave_food': 'Beans' })
