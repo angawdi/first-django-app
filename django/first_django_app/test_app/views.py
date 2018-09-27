@@ -8,4 +8,4 @@ def index(request):
 
 def bob(request):
 	print('Bob says hi')
-	return HttpResponse('Bob says hello world')
+	return render(request,'test_app/bob.html')
